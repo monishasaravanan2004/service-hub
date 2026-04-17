@@ -1,0 +1,47 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (190,157)<div class='card' />
+	[1] (190,265)<div  />
+		[2] (190,239)<i  />
+		[3] (190,299)<h3 >Electrician />
+[4] (345,157)<div class='card' />
+	[5] (345,265)<div  />
+		[6] (345,239)<i  />
+		[7] (345,299)<h3 >Plumber />
+[8] (500,157)<div class='card' />
+	[9] (500,265)<div  />
+		[10] (500,239)<i  />
+		[11] (500,299)<h3 >AC Repair />
+[12] (655,157)<div class='card' />
+	[13] (655,265)<div  />
+		[14] (655,239)<i  />
+		[15] (655,299)<h3 >Cleaning Services />
+[16] (810,157)<div class='card' />
+	[17] (810,265)<div  />
+		[18] (810,239)<i  />
+		[19] (810,299)<h3 >Salon / Beauty />
+[20] (190,576)<div class='card' />
+	[21] (190,490)<img  />
+	[22] (190,683)<div  />
+		[23] (190,657)<i  />
+		[24] (190,718)<h3 >Bike Service />
+[25] (345,576)<div class='card' />
+	[26] (345,490)<img  />
+	[27] (345,683)<div  />
+		[28] (345,657)<i  />
+		[29] (345,718)<h3 >Car Repair />
+[30] (500,576)<div class='card' />
+	[31] (500,490)<img  />
+	[32] (500,683)<div  />
+		[33] (500,657)<i  />
+		[34] (500,718)<h3 >Laptop Repair />
+[35] (655,576)<div class='card' />
+	[36] (655,490)<img  />
+	[37] (655,683)<div  />
+		[38] (655,657)<i  />
+		[39] (655,718)<h3 >Mobile Repair />
+Why Choose ServiceHub?
+
+</current_dom>

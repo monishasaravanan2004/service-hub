@@ -1,0 +1,64 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+const defaultCategories = [
+    { id: 'c1', name: 'Electrician', icon: 'bx-bolt-circle', image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=500&q=80' },
+    { id: 'c2', name: 'Plumber', icon: 'bx-water', image: 'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=500&q=80' },
+    { id: 'c3', name: 'AC Repair', icon: 'bx-wind', image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=500&q=80' },
+    { id: 'c4', name: 'Cleaning Services', icon: 'bx-spray-can', image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&q=80' },
+    { id: 'c5', name: 'Salon / Beauty', icon: 'bx-cut', image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=500&q=80' },
+    { id: 'c6', name: 'Bike Service', icon: 'bx-cycling', image: 'https://images.unsplash.com/photo-1557008075-7f2c5efa4cb7?w=500&q=80' },
+    { id: 'c7', name: 'Car Repair', icon: 'bx-car', image: 'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=500&q=80' },
+    { id: 'c8', name: 'Laptop Repair', icon: 'bx-laptop', image: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=500&q=80' },
+    { id: 'c9', name: 'Mobile Repair', icon: 'bx-mobile', image: 'https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?w=500&q=80' }
+];
+
+const defaultUsers = [
+    { id: 'u_admin', name: 'System Admin', email: 'admin@servicehub.com', password: 'password', role: 'admin', phone: '1234567890' },
+    { id: 'u_client1', name: 'John Doe', email: 'john@gmail.com', password: 'password', role: 'client', phone: '9876543210', address: 'Downtown New York' },
+    { id: 'u_prov1', name: 'Mike Electric', email: 'mike@spark.com', password: 'password', role: 'provider', phone: '1112223333' },
+    { id: 'u_prov2', name: 'Plumb Pro', email: 'pro@plumber.com', password: 'password', role: 'provider', phone: '4445556666' }
+];
+
+const defaultProviders = [
+    {
+        userId: 'u_prov1',
+        name: 'Mike Electric',
+        serviceCategory: 'Electrician',
+        area: 'Downtown',
+        address: '101 Power St, Downtown',
+        experience: '5 Years',
+        price: 50,
+        timings: '09:00 AM - 06:00 PM',
+        image: 'https://ui-avatars.com/api/?name=Mike+Electric&background=0D8ABC&color=fff',
+        rating: 4.8,
+        status: 'approved',
+        availability: true,
+        about: 'Expert residential and commercial electrician.'
+    },
+    {
+        userId: 'u_prov2',
+        name: 'Plumb Pro',
+        serviceCategory: 'Plumber',
+        area: 'Uptown',
+        address: '202 Water Way, Uptown',
+        experience: '8 Years',
+        price: 60,
+        timings: '08:00 AM - 05:00 PM',
+        image: 'https://ui-avatars.com/api/?name=Plumb+Pro&background=10B981&color=fff',
+        rating: 4.5,
+        status: 'approved',
+        availability: true,
+        about: 'Professional plumbing services. Fast and reliable.'
+    }
+];
+
+const defaultReviews = [
+    { id: 'r1', providerId: 'u_prov1', clientId: 'u_client1', clientName: 'John Doe', rating: 5, comment: 'Great service, fixed my wiring fast!', date: '2023-10-01' },
+    { id: 'r2', providerId: 'u_prov2', clientId: 'u_client1', clientName: 'John Doe', rating: 4, comment: 'Good plumber, came a bit late but job was done well.', date: '2023-10-05' }
+];
+
+const defaultBookings = [];
+
+</current_dom>

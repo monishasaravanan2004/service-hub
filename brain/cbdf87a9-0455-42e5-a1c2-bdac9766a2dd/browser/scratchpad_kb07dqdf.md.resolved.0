@@ -1,0 +1,8 @@
+# Verification Plan - Service Booking System
+
+- [ ] Navigate to http://127.0.0.1:8080
+- [ ] Perform Hard Refresh (Ctrl+F5)
+- [ ] Scroll to 'Our Services' section
+- [ ] Verify Bike Service image
+- [ ] Verify AC Repair image
+- [ ] Capture screenshot for verification

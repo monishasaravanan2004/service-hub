@@ -1,0 +1,14 @@
+# Progress Checklist
+
+- [x] Navigate to http://localhost:8000
+- [x] Wait 2 seconds for data to load
+- [x] Scroll to 'Our Services' grid
+- [x] Click on 'Electrician' card
+- [x] Wait 2 seconds
+- [ ] Click on 'View Details' for 'Mike Electric'
+- [ ] Wait 2 seconds on Provider Details page
+- [ ] Verify Mike's profile details
+
+# Issue Log
+- Error: "ProviderCard is not defined" on the search page.
+- Need to find where `ProviderCard` is defined and if it is loaded.

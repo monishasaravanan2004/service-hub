@@ -1,0 +1,179 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+<!-- Fonts -->
+<link
+href
+="
+[0] (296,31)<a class='html-attribute-value html-resource-link' href='https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap'>https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap />
+"
+rel
+="
+stylesheet
+">
+<!-- Icons -->
+<link
+href
+='
+[1] (221,73)<a class='html-attribute-value html-resource-link' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css />
+'
+rel
+='
+stylesheet
+'>
+<!-- Styles -->
+<link
+rel
+="
+stylesheet
+"
+href
+="
+[2] (207,114)<a class='html-attribute-value html-resource-link' href='css/style.css'>css/style.css />
+">
+<link
+rel
+="
+stylesheet
+"
+href
+="
+[3] (210,135)<a class='html-attribute-value html-resource-link' href='css/layout.css'>css/layout.css />
+">
+<link
+rel
+="
+stylesheet
+"
+href
+="
+[4] (219,156)<a class='html-attribute-value html-resource-link' href='css/components.css'>css/components.css />
+">
+</head>
+<body>
+<!-- Header -->
+<div
+id
+="
+header-container
+">
+</div>
+<!-- Main Content Area -->
+<main
+id
+="
+app-container
+">
+<!-- Routing injects page content here -->
+</main>
+<!-- Footer -->
+<div
+id
+="
+footer-container
+">
+</div>
+<!-- Toast Notifications -->
+<div
+id
+="
+toast-container
+"
+class
+="
+toast-container
+">
+</div>
+<!-- Data & State Base -->
+<script
+src
+="
+[5] (144,531)<a class='html-attribute-value html-resource-link' href='data/dummy_data.js'>data/dummy_data.js />
+">
+</script>
+<script
+src
+="
+[6] (128,552)<a class='html-attribute-value html-resource-link' href='js/store.js'>js/store.js />
+">
+</script>
+<script
+src
+="
+[7] (126,572)<a class='html-attribute-value html-resource-link' href='js/auth.js'>js/auth.js />
+">
+</script>
+<!-- UI Components -->
+<script
+src
+="
+[8] (156,635)<a class='html-attribute-value html-resource-link' href='js/components/header.js'>js/components/header.js />
+">
+</script>
+<script
+src
+="
+[9] (156,656)<a class='html-attribute-value html-resource-link' href='js/components/footer.js'>js/components/footer.js />
+">
+</script>
+<script
+src
+="
+[10] (170,676)<a class='html-attribute-value html-resource-link' href='js/components/providerCard.js'>js/components/providerCard.js />
+">
+</script>
+<!-- Pages -->
+<script
+src
+="
+[11] (140,739)<a class='html-attribute-value html-resource-link' href='js/pages/home.js'>js/pages/home.js />
+">
+</script>
+<script
+src
+="
+[12] (144,760)<a class='html-attribute-value html-resource-link' href='js/pages/search.js'>js/pages/search.js />
+">
+</script>
+<script
+src
+="
+[13] (168,781)<a class='html-attribute-value html-resource-link' href='js/pages/provider_details.js'>js/pages/provider_details.js />
+">
+</script>
+<script
+src
+="
+[14] (151,801)<a class='html-attribute-value html-resource-link' href='js/pages/authPages.js'>js/pages/authPages.js />
+">
+</script>
+<script
+src
+="
+[15] (170,822)<a class='html-attribute-value html-resource-link' href='js/pages/dashboards/client.js'>js/pages/dashboards/client.js />
+">
+</script>
+<script
+src
+="
+[16] (175,843)<a class='html-attribute-value html-resource-link' href='js/pages/dashboards/provider.js'>js/pages/dashboards/provider.js />
+">
+</script>
+<script
+src
+="
+[17] (168,864)<a class='html-attribute-value html-resource-link' href='js/pages/dashboards/admin.js'>js/pages/dashboards/admin.js />
+">
+</script>
+<!-- Router & App Init -->
+<script
+src
+="
+[18] (124,926)<a class='html-attribute-value html-resource-link' href='js/app.js'>js/app.js />
+">
+</script>
+</body>
+</html>
+
+</current_dom>

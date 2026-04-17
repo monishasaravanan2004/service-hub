@@ -1,0 +1,9 @@
+# Website Verification Plan
+
+- [x] Open http://127.0.0.1:8080
+- [x] Wait for the page to render
+- [x] Scroll to 'Our Services' section
+- [ ] Confirm 'Bike Service' and 'AC Repair' images are updated
+- [x] Tested Bike Service image URL: Found 404
+- [ ] Take a screenshot for confirmation
+- [ ] Report findings to the user

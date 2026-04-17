@@ -1,0 +1,93 @@
+const HomePage = {
+    render() {
+        const categories = Store.get('categories');
+        let categoryHTML = categories.map(c => `
+            <div class="card" style="text-align: center; cursor: pointer; transition: all 0.3s ease; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 0; overflow: hidden; border-radius: 16px; background: white;" onclick="window.location.hash='#search?service=${encodeURIComponent(c.name)}'" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.05)';">
+                <div style="padding: 12px; padding-bottom: 0;">
+                    <img src="${c.image}" alt="${c.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://placehold.co/500x300?text=Image+Not+Found';" style="width: 100%; height: 160px; object-fit: cover; border-radius: 12px; background: #f8fafc; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);">
+                </div>
+                <div style="padding: 20px;">
+                    <i class='bx ${c.icon}' style="font-size: 2.5rem; color: var(--primary); margin-bottom: 12px; transition: transform 0.3s ease;"></i>
+                    <h3 style="font-size: 1.15rem; margin: 0; color: var(--text-dark); font-weight: 600;">${c.name}</h3>
+                </div>
+            </div>
+        `).join('');
+
+        return `
+            <section style="background: linear-gradient(135deg, var(--primary) 0%, #1e3a8a 100%); color: white; padding: 120px 20px 100px; text-align: center; margin-top: -40px; position: relative; overflow: hidden;">
+                <!-- Decorative BG Circles -->
+                <div style="position: absolute; top: -50px; left: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+                <div style="position: absolute; bottom: -100px; right: -50px; width: 300px; height: 300px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+
+                <div class="container" style="position: relative; z-index: 1;">
+                    <h1 style="font-size: 3.5rem; margin-bottom: 20px; color: white; letter-spacing: -1px; line-height: 1.2;">Find Trusted Service Professionals</h1>
+                    <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto;">Book reliable cleaners, plumbers, electricians, and more instantly for your home and personal needs.</p>
+                    
+                    <div style="background: white; padding: 10px; border-radius: 50px; display: flex; flex-wrap: wrap; gap: 10px; width: 100%; max-width: 800px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); margin: 0 auto;">
+                        <div style="flex: 1; min-width: 200px; position: relative;">
+                            <i class='bx bx-briefcase' style="position: absolute; left: 15px; top: 15px; color: var(--text-muted); font-size: 1.2rem;"></i>
+                            <input type="text" id="search-service" placeholder="What service do you need?" class="form-control" style="border: none; background: transparent; padding-left: 45px; box-shadow: none;">
+                        </div>
+                        <div style="width: 1px; background: #e2e8f0; margin: 10px 0;"></div>
+                        <div style="flex: 1; min-width: 200px; position: relative;">
+                            <i class='bx bx-map' style="position: absolute; left: 15px; top: 15px; color: var(--text-muted); font-size: 1.2rem;"></i>
+                            <input type="text" id="search-area" placeholder="Enter your area" class="form-control" style="border: none; background: transparent; padding-left: 45px; box-shadow: none;">
+                        </div>
+                        <button class="btn btn-primary" onclick="HomePage.search()" style="padding: 12px 30px; font-size: 1.1rem; border-radius: 40px;"><i class='bx bx-search'></i> Search</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container" style="padding: 80px 20px;">
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Our Services</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem;">Choose from a wide range of professional services</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 30px;">
+                    ${categoryHTML}
+                </div>
+            </section>
+            
+            <section style="background: white; padding: 80px 20px;">
+                <div class="container" style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Why Choose ServiceHub?</h2>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; gap: 15px; margin-bottom: 20px;">
+                                <div style="background: #e0e7ff; color: var(--primary); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; shrink: 0;"><i class='bx bx-check'></i></div>
+                                <div>
+                                    <h4>Verified Professionals</h4>
+                                    <p style="color: var(--text-muted); margin-top: 5px;">All our service providers are background-checked and highly skilled.</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; gap: 15px; margin-bottom: 20px;">
+                                <div style="background: #e0e7ff; color: var(--primary); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; shrink: 0;"><i class='bx bx-star'></i></div>
+                                <div>
+                                    <h4>Quality Service</h4>
+                                    <p style="color: var(--text-muted); margin-top: 5px;">We ensure top-notch service quality with our client rating system.</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; gap: 15px;">
+                                <div style="background: #e0e7ff; color: var(--primary); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; shrink: 0;"><i class='bx bx-support'></i></div>
+                                <div>
+                                    <h4>24/7 Support</h4>
+                                    <p style="color: var(--text-muted); margin-top: 5px;">Our support team is always ready to help you with your bookings.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        `;
+    },
+    search() {
+        const service = document.getElementById('search-service').value.trim();
+        const area = document.getElementById('search-area').value.trim();
+        let query = [];
+        if (service) query.push(`service=${encodeURIComponent(service)}`);
+        if (area) query.push(`area=${encodeURIComponent(area)}`);
+        window.location.hash = `#search?${query.join('&')}`;
+    }
+};
+
+window.HomePage = HomePage;

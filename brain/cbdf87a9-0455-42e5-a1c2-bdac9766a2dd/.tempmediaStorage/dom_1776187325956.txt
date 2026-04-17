@@ -1,0 +1,52 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Our Services
+Choose from a wide range of professional services
+[0] (190,431)<div class='card' />
+	[1] (190,345)<img  />
+	[2] (190,539)<div  />
+		[3] (190,513)<i  />
+		[4] (190,573)<h3 >Electrician />
+[5] (345,431)<div class='card' />
+	[6] (345,345)<img  />
+	[7] (345,539)<div  />
+		[8] (345,513)<i  />
+		[9] (345,573)<h3 >Plumber />
+[10] (500,431)<div class='card' />
+	[11] (500,345)<img  />
+	[12] (500,539)<div  />
+		[13] (500,513)<i  />
+		[14] (500,573)<h3 >AC Repair />
+[15] (655,431)<div class='card' />
+	[16] (655,345)<img  />
+	[17] (655,539)<div  />
+		[18] (655,513)<i  />
+		[19] (655,573)<h3 >Cleaning Services />
+[20] (810,431)<div class='card' />
+	[21] (810,345)<img  />
+	[22] (810,539)<div  />
+		[23] (810,513)<i  />
+		[24] (810,573)<h3 >Salon / Beauty />
+[25] (190,850)<div class='card' />
+	[26] (190,764)<img  />
+	[27] (190,957)<div  />
+		[28] (190,931)<i  />
+		[29] (190,992)<h3 >Bike Service />
+[30] (345,850)<div class='card' />
+	[31] (345,764)<img  />
+	[32] (345,957)<div  />
+		[33] (345,931)<i  />
+		[34] (345,992)<h3 >Car Repair />
+[35] (500,850)<div class='card' />
+	[36] (500,764)<img  />
+	[37] (500,931)<i  />
+	Laptop Repair
+[38] (655,850)<div class='card' />
+	[39] (655,764)<img  />
+	[40] (655,957)<div  />
+		[41] (655,931)<i  />
+		[42] (655,992)<h3 >Mobile Repair />
+
+</current_dom>

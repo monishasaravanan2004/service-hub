@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceHub | Premium Home & Personal Services</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-container"></div>
+    
+    <!-- Main Content Area -->
+    <main id="app-container">
+        <!-- Routing injects page content here -->
+    </main>
+    
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Data & State Base -->
+    <script src="data/dummy_data.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/auth.js"></script>
+    
+    <!-- UI Components -->
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/components/providerCard.js"></script>
+
+    <!-- Pages -->
+    <script src="js/pages/home.js"></script>
+    <script src="js/pages/search.js"></script>
+    <script src="js/pages/provider_details.js"></script>
+    <script src="js/pages/authPages.js"></script>
+    <script src="js/pages/dashboards/client.js"></script>
+    <script src="js/pages/dashboards/provider.js"></script>
+    <script src="js/pages/dashboards/admin.js"></script>
+    
+    <!-- Router & App Init -->
+    <script src="js/app.js"></script>
+</body>
+</html>

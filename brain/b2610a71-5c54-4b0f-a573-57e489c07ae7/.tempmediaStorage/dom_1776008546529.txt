@@ -1,0 +1,11 @@
+ServiceHub
+Your trusted partner for home and personal services.
+Company
+[0] (381,752)<a href='#home'>About Us />
+[1] (377,798)<a href='#home'>Contact />
+[2] (377,843)<a href='#home'>Careers />
+Support
+[3] (721,752)<a href='#home'>Help Center />
+[4] (736,798)<a href='#home'>Terms of Service />
+[5] (727,843)<a href='#home'>Privacy Policy />
+© 2026 ServiceHub. All rights reserved.
